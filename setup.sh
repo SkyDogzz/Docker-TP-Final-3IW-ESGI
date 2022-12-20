@@ -25,4 +25,9 @@ for id in $ids; do
   docker exec $id php artisan migrate:fresh 0>> /dev/null 1>> /dev/null
   # Affiche un message
   echo "Commande 'php artisan migrate:fresh' exécutée dans le conteneur $id"
+
+  # Exécute la commande "chown -R www-data:www-data /var/www/html" dans le conteneur
+  docker exec $id chown -R www-data:www-data /var/www/html 0>> /dev/null 1>> /dev/null
+  # Affiche un message
+  echo "Commande 'chown -R www-data:www-data /var/www/html' exécutée dans le conteneur $id"
 done
