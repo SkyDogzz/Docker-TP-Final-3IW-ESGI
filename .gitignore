@@ -5,7 +5,6 @@
 /laravel1/.idea
 /laravel1/.vscode
 /laravel1/.vagrant
-/laravel1/.env
 /laravel1/Homestead.yaml
 /laravel1/Homestead.json
 /laravel1/npm-debug.log
@@ -22,7 +21,6 @@
 /laravel2/.idea
 /laravel2/.vscode
 /laravel2/.vagrant
-/laravel2/.env
 /laravel2/Homestead.yaml
 /laravel2/Homestead.json
 /laravel2/npm-debug.log
