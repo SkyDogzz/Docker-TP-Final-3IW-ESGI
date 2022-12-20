@@ -62,3 +62,10 @@ services:
     restart: unless-stopped
     ports:
       - '8090:80'
+  portainer:
+    image: portainer/portainer
+    restart: unless-stopped
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
