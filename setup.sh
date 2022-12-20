@@ -11,6 +11,11 @@ for id in $ids; do
   # Affiche un message
   echo "Commande 'composer install' exécutée dans le conteneur $id"
 
+  # Exécute la commande "npm install" dans le conteneur
+  docker exec $id npm install 0>> /dev/null 1>> /dev/null
+  # Affiche un message
+  echo "Commande 'npm install' exécutée dans le conteneur $id"
+
   # Exécute la commande "npm run build" dans le conteneur
   docker exec $id npm run build 0>> /dev/null 1>> /dev/null
   # Affiche un message
